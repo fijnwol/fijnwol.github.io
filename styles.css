@@ -1,19 +1,19 @@
 body {
     font-family: 'Open Sans';
-    font-size: 15px;
-    margin-left: 20%;
-    margin-right: 20%;
+    font-size: 12px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.flex-container {
+.nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
 }
 
 .product-image {
-  border-radius: 25%;
+  border-radius: 10%;
+  width: 100%;
+  height: auto;
 }
 
 #homepage-title {
@@ -21,6 +21,18 @@ body {
   text-decoration: none;
 }
 
-div:not(:last-child) {
-  margin-top: 20px;
+h1 {
+  margin-bottom: 3px;
+}
+
+h2 {
+  margin-top: 3px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-bottom: 20px;
 }
