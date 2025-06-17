@@ -1,15 +1,4 @@
 function sendEmail() {
-  let fname = document.getElementById("fname").value;
-  let lname = document.getElementById("lname").value;
-  let zip = document.getElementById("zip").value;
-  let address = document.getElementById("address").value;
-  
-  let mailtoLink = "mailto:fijnwol@gmail.com";
-  mailtoLink += "?subject=WHOOLNAME + DATEHERE";
-  mailtoLink += "&body=Name:%20" + address + "%0D%0AEmail:%20" + "%0D%0AMessage:%20";
-  console.log(mailtoLink)
-  window.location.href = mailtoLink;
-
   function getTimestamp() {
     const date = new Date();
     const formatter = new Intl.DateTimeFormat('default', {
@@ -36,5 +25,22 @@ function getOrdinalSuffix(day) {
 }
 
 console.log(getTimestamp());
+
+  let timestamp = getTimestamp()
+  let amount = document.getElementById("amount").value;
+  let fname = document.getElementById("fname").value;
+  let lname = document.getElementById("lname").value;
+  let company = document.getElementById("company").value;
+  let country = document.getElementById("country").value;
+  let streethouse = document.getElementById("streethouse").value;
+  let zip = document.getElementById("zip").value;
+  let city = document.getElementById("city").value;
+  let phone = document.getElementById("phone").value;
+  
+  let mailtoLink = "mailto:fijnwol@gmail.com";
+  mailtoLink += "?subject=" + lname + " " + fname + ": " + timestamp;
+  mailtoLink += "&body=Amount:" + amount + "%0D%0A" + "First name:" + fname + "%0D%0A" + "Last name:" + lname + "%0D%0A" + "Company:" + company + "%0D%0A" + "Country::" + country + "%0D%0A" + "Street name and house number:" + streethouse + "%0D%0A" + "Postcode:" + zip + "%0D%0A" + "Town/City:" + city + "%0D%0A" + "Phone:" + phone + "%0D%0A";
+  console.log(mailtoLink)
+  window.location.href = mailtoLink;
 
 }

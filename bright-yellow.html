@@ -20,24 +20,36 @@
       <h2>limited edition local yarns</h2>
     </div>
   </div>
-  <div>
-    <img class="product-image" src="images/bright-yellow.png" alt="Bright yellow colored yarn" width="300" height="300">
-    <div>
-      <p>Swifter 100% sheep wool</p>
-      <p>50g - 170m</p>
-      <p>Color: bright yellow</p>
-      <p>4 skeins in stock</p>
-    </div>
-  </div>
+  <img class="product-detail-image" src="images/bright-yellow.png" alt="Bright yellow colored yarn" width="300"
+    height="300">
+  <p>Swifter 100% sheep wool</p>
+  <p>50g = 170m</p>
+  <p>Color: bright yellow</p>
+  <p>Plant dyed with xxx</p>
+  <p>€12</p>
+  <p>10+ skeins in stock</p>
+  <p>100% Belgium wool from Swifter sheep</p>
+  <p>Please note that every skein is unique and hand dyed skeins can be different even if coming from the same dye lot.
+    Alternating skeins is recommended.</p>
   <h3>Order below:</h3>
-  <label for="fname">First name:</label><br>
+  <label for="amount">Amount of skeins*</label><br>
+  <input type="text" id="amount" name="amount" value="1"><br>
+  <label for="fname">First name*:</label><br>
   <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="lname">ZIP code:</label><br>
-  <input type="text" id="zip" name="zip"><br><br>
-  <label for="lname">Address</label><br>
-  <input type="text" id="address" name="address"><br><br>
+  <label for="lname">Last name*:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="company">Company name (optional):</label><br>
+  <input type="text" id="company" name="company"><br>
+  <label for="country">Country*:</label><br>
+  <input type="text" id="country" name="country"><br>
+  <label for="streehouse">Street name and house number*:</label><br>
+  <input type="text" id="streethouse" name="streethouse"><br>
+  <label for="zip">Postcode*:</label><br>
+  <input type="text" id="zip" name="zip"><br>
+  <label for="city">Town/City*:</label><br>
+  <input type="text" id="city" name="city"><br>
+  <label for="Phone">Phone:</label><br>
+  <input type="text" id="phone" name="phone"><br>
   <input type="submit" value="Send order in email" onClick="sendEmail()">
   </form>
   <a id="terms-link" href="terms.html">Terms and conditions</a>

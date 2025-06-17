@@ -42,3 +42,8 @@ h2 {
   margin-top: 20px;
   text-align: center;
 }
+
+.product-detail-image {
+  width: 75%;
+  height: auto;
+}
