@@ -24,8 +24,6 @@ function getOrdinalSuffix(day) {
     return 'th';
 }
 
-console.log(getTimestamp());
-
   let timestamp = getTimestamp()
   let amount = document.getElementById("amount").value;
   let fname = document.getElementById("fname").value;
@@ -36,11 +34,10 @@ console.log(getTimestamp());
   let zip = document.getElementById("zip").value;
   let city = document.getElementById("city").value;
   let phone = document.getElementById("phone").value;
+  let note = document.getElementById("note").value
   
   let mailtoLink = "mailto:fijnwol@gmail.com";
   mailtoLink += "?subject=" + lname + " " + fname + ": " + timestamp;
-  mailtoLink += "&body=Amount:" + amount + "%0D%0A" + "First name:" + fname + "%0D%0A" + "Last name:" + lname + "%0D%0A" + "Company:" + company + "%0D%0A" + "Country::" + country + "%0D%0A" + "Street name and house number:" + streethouse + "%0D%0A" + "Postcode:" + zip + "%0D%0A" + "Town/City:" + city + "%0D%0A" + "Phone:" + phone + "%0D%0A";
-  console.log(mailtoLink)
+  mailtoLink += "&body=Product: " + location.href + "%0D%0A" + "Amount: " + amount + "%0D%0A" + "First name: " + fname + "%0D%0A" + "Last name: " + lname + "%0D%0A" + "Company: " + company + "%0D%0A" + "Country: " + country + "%0D%0A" + "Street name and house number: " + streethouse + "%0D%0A" + "Postcode: " + zip + "%0D%0A" + "Town/City: " + city + "%0D%0A" + "Phone: " + phone + "%0D%0A" + "Additional Information: " + note;
   window.location.href = mailtoLink;
-
 }
