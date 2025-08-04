@@ -27,12 +27,12 @@ body {
   }
 
   .product-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 5px;
-  column-gap: 5px;
-  margin-bottom: 20px;
-}
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (orientation: landscape) {
@@ -54,17 +54,17 @@ body {
   }
 
   .product-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 5%;
-  column-gap: 5%;
-  margin-bottom: 25%;
-}
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 25px;
+    column-gap: 5%;
+    margin-bottom: 25px;
+  }
 
-#instagram-embed-0 {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
+  #instagram-embed-0 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 #homepage-title {
